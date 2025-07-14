@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /private/
+
+Sitemap: https://gestion-creditos.ademasistemas.com.ar/sitemap.xml

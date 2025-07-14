@@ -1,0 +1,509 @@
+/* General Styles */
+:root {
+    --color-dark-blue: #2C3E50; /* Similar al color del logo y headers */
+    --color-medium-blue: #0ed1b3; /* Azul de acento */
+    --color-green: #2ECC71; /* Verde para CTA y positivo */
+    --color-white: #ffffff;
+    --color-light-grey: #f4f4f4;
+    --color-text-dark: #333333;
+    --color-text-light: #555555;
+    --color-red-offer: #FF0000; /* Color para la oferta destacada */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--color-dark-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: var(--color-white);
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #27AE60; /* Darker green */
+}
+
+.btn-secondary {
+    background-color: var(--color-medium-blue);
+    color: var(--color-white);
+    font-size: 1.2em;
+}
+
+.btn-secondary:hover {
+    background-color: #2980B9; /* Darker blue */
+}
+
+.btn-lg { /* Overriding Bootstrap btn-lg for consistency */
+    padding: 15px 35px;
+    font-size: 1.3em;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--color-dark-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 100px 0;
+    min-height: 600px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-logo {
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    margin-bottom: 30px;
+}
+
+.hero-section .subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-section .price-info {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Problem Section */
+.problem-section {
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+}
+
+.problem-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.problem-item {
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    flex: 1 1 calc(33% - 40px); /* 3 items per row, with gap */
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.problem-item .icon-large {
+    font-size: 3.5em;
+    color: var(--color-medium-blue);
+    margin-bottom: 20px;
+}
+
+/* Solution Section */
+.solution-section {
+    background-color: var(--color-medium-blue);
+    color: var(--color-white);
+}
+
+.solution-section h2, .solution-section .subtitle {
+    color: var(--color-white);
+}
+
+.solution-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.solution-text {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.solution-image {
+    flex: 1;
+    text-align: center;
+}
+
+.solution-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: var(--color-white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item .icon-medium {
+    font-size: 2.5em;
+    color: var(--color-green);
+    margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+/* Features Section */
+.features-section {
+    background-color: var(--color-light-grey);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.feature-item i {
+    font-size: 2.2em;
+    color: var(--color-dark-blue);
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    background-color: var(--color-white);
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.why-choose-item {
+    background-color: var(--color-light-grey);
+    border-left: 5px solid var(--color-medium-blue);
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.why-choose-item h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+/* Acquire Section (Adapted) */
+.acquire-section {
+    background-color: var(--color-green); /* Usamos el verde principal */
+    color: var(--color-dark-blue); /* Texto oscuro para contraste en verde */
+    text-align: center;
+}
+
+.acquire-section h2.section-title {
+    color: var(--color-white); /* Título en blanco para destacar */
+}
+
+.acquire-section h3 {
+    color: var(--color-white); /* Título de oferta en blanco */
+    margin-top: 15px;
+}
+
+.acquire-section .price-original {
+    text-decoration: line-through;
+    font-size: 1.1em;
+    opacity: 0.8;
+    color: var(--color-dark-blue);
+}
+
+.acquire-section .price-offer {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--color-white); /* Precio de oferta en blanco */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.acquire-section .btn-lg {
+    margin-top: 20px;
+}
+
+/* Demo Section (Adapted) */
+.bg-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+
+.bg-dark-blue h2.section-title,
+.bg-dark-blue h3 {
+    color: var(--color-white) !important;
+}
+
+.bg-dark-blue p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Contact Section (Adapted) */
+.contact-section {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.contact-section h2.section-title {
+    color: var(--color-white);
+}
+
+.contact-section h3 {
+    color: var(--color-green); /* Color para el "neon-text" en el contacto */
+}
+
+.nav-link-light { /* Para enlaces dentro de secciones oscuras */
+    color: var(--color-medium-blue) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link-light:hover {
+    color: var(--color-green) !important;
+    text-decoration: underline;
+}
+
+.contact-section .bi {
+    margin-right: 10px;
+    color: var(--color-green); /* Iconos de contacto con color neon */
+}
+
+
+/* Footer (Adapted) */
+footer {
+    background-color: var(--color-dark-blue); /* Color de fondo del footer */
+    color: var(--color-white);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav-link-light { /* Asegura que los enlaces en el footer también sean claros */
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+}
+
+.nav-link-light:hover {
+    color: var(--color-medium-blue) !important;
+    text-decoration: underline;
+}
+
+
+/* WhatsApp Modal (Adapted) */
+.modal-content.bg-dark-blue {
+    background-color: var(--color-dark-blue) !important;
+    color: var(--color-white);
+}
+
+.modal-header.border-secondary, .modal-footer.border-secondary {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.modal-title {
+    color: var(--color-green) !important; /* Título del modal con color neon */
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Hace la X blanca */
+}
+
+.modal-body p, .modal-body a {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .solution-content {
+        flex-direction: column;
+    }
+    .solution-text, .solution-image {
+        flex: none;
+        width: 100%;
+    }
+    .col-md-6 { /* Bootstrap column stacking for smaller screens */
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    .subtitle {
+        font-size: 1.1em;
+    }
+    .problem-item, .benefit-item, .feature-item, .why-choose-item {
+        flex: 1 1 100%; /* Stack items on small screens */
+        max-width: 100%;
+    }
+    .problem-list, .benefits-grid, .features-grid, .why-choose-grid {
+        gap: 20px;
+    }
+    .hero-section {
+        padding: 80px 20px;
+        min-height: 500px;
+    }
+    .btn-lg { /* Overriding Bootstrap btn-lg for consistency */
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+    .price-box {
+        padding: 30px;
+    }
+    .discount-text {
+        font-size: 2.5em;
+    }
+    .final-price {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        max-width: 200px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    .btn-primary, .btn-secondary {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .acquire-section .price-offer {
+        font-size: 1.5em;
+    }
+    .acquire-section .price-original {
+        font-size: 0.9em;
+    }
+}
