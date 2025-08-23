@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Creación de Créditos y Aprobaciones - Gestión de Créditos</title>
+    <meta name="description" content="Aprende a crear solicitudes de crédito y gestionar el proceso de aprobación.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tutorial-page">
+        <div class="container">
+            <a href="index.html#tutoriales" class="tutorial-back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Tutoriales
+            </a>
+
+            <div class="tutorial-header">
+                <div class="tutorial-badge">Tutorial 3</div>
+                <h1>Creación de Créditos y Aprobaciones</h1>
+                <p class="lead">Aprende a crear solicitudes de crédito y gestionar el proceso completo de aprobación de manera profesional.</p>
+            </div>
+
+            <div class="tutorial-video-container">
+                <h3 class="mb-4">Video Tutorial</h3>
+                <div class="tutorial-video-wrapper">
+                    <div class="video-placeholder">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Video Tutorial - Créditos y Aprobaciones</span>
+                    </div>
+                    <!-- Placeholder for actual video -->
+                    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Creación de Créditos y Aprobaciones" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+            <div class="tutorial-steps-container">
+                <div class="tutorial-steps-header">
+                    <h3>Pasos Detallados</h3>
+                    <p>Sigue estos pasos para crear y aprobar créditos de manera efectiva</p>
+                </div>
+
+                <div class="tutorial-steps-list">
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">1</div>
+                        <div class="tutorial-step-content">
+                            <h4>Crear una Solicitud de Crédito</h4>
+                            <p>Las solicitudes se crean en <strong>Cuentas &gt; Solicitudes de crédito</strong>. Allí haz clic en <strong>Agregar solicitud</strong> y completa el formulario.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">2</div>
+                        <div class="tutorial-step-content">
+                            <h4>Campos del formulario</h4>
+                            <p>Al crear la solicitud completa los siguientes campos (los marcados con * son obligatorios):</p>
+                            <ul>
+                                <li><strong>Fecha</strong></li>
+                                <li><strong>Solicitante</strong> (seleccionar cliente)</li>
+                                <li><strong>Cuenta</strong> (se carga automáticamente)</li>
+                                <li><strong>Importe *</strong></li>
+                                <li><strong>Cuotas *</strong></li>
+                                <li><strong>Periodicidad</strong> (mensual, semanal, quincenal, trimestral, semestral, etc.)</li>
+                                <li><strong>Día vencimiento fijo</strong> (opcional; se usa para "Mensual con Día Fijo" para fijar el día de inicio del plan)</li>
+                                <li><strong>Interés *</strong> (%)</li>
+                                <li><strong>Importe cuota</strong> (se calcula automáticamente)</li>
+                                <li><strong>Importe final</strong> (se calcula automáticamente)</li>
+                                <li><strong>Interés por cuota</strong> (ej: 0.00%)</li>
+                                <li><strong>Aprobada el</strong> (se completa automáticamente cuando se aprueba)</li>
+                            </ul>
+                            <p>El sistema calcula <em>Importe cuota</em> y <em>Importe final</em> en base a importe, cuotas e interés.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">3</div>
+                        <div class="tutorial-step-content">
+                            <h4>Autorizar la solicitud</h4>
+                            <p>Una vez cargada la solicitud, desde la tabla de <strong>Solicitudes de crédito</strong> usa el botón de acciones de la fila para <strong>Autorizar</strong>. Al autorizarse:</p>
+                            <ul>
+                                <li>Se crea un <strong>Crédito</strong> en la sección <strong>Créditos</strong>.</li>
+                                <li>Se generan automáticamente todas las cuotas en <strong>Calendario de cuotas</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">4</div>
+                        <div class="tutorial-step-content">
+                            <h4>Ver y descargar el contrato</h4>
+                            <p>En <strong>Créditos</strong> verás la lista de créditos. Cada crédito tiene un botón <strong>Descargar</strong> que genera el contrato del crédito en PDF.</p>
+                            <p>El formato (horizontal/vertical) se configura en <strong>Datos de empresa</strong> (menú del usuario, arriba a la derecha) en el campo <strong>Orientación</strong>. Para probar ambos formatos, puedes descargar un contrato de ejemplo:</p>
+                            <p>
+                                <a class="btn btn-outline-secondary me-2" href="sample-contrato-credito.html?orientation=portrait" target="_blank">Contrato (Vertical)</a>
+                                <a class="btn btn-outline-secondary" href="sample-contrato-credito.html?orientation=landscape" target="_blank">Contrato (Horizontal)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">5</div>
+                        <div class="tutorial-step-content">
+                            <h4>Cobrar cuotas — Calendario de cuotas</h4>
+                            <p>Para cobrar una cuota ve a <strong>Calendario de cuotas</strong>. Verás todas las cuotas de todos los clientes. Si una cuota no está cobrada, tendrás dos botones en la fila:</p>
+                            <ul>
+                                <li><strong>Cobro en efectivo</strong> — registra el pago como efectivo.</li>
+                                <li><strong>Cobro por otros medios / transferencia</strong> — registra pagos por transferencia u otros medios.</li>
+                            </ul>
+                            <p>Al cobrar, el sistema marcará la cuota como pagada y actualizará los saldos del cliente y del crédito.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-navigation mt-4 text-end">
+                    <a class="btn btn-primary" href="tutorial-reportes.html">Siguiente →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

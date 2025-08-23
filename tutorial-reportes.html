@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Reportes - Gestión de Créditos</title>
+    <meta name="description" content="Aprende a generar reportes detallados para analizar tu negocio.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tutorial-page">
+        <div class="container">
+            <a href="index.html#tutoriales" class="tutorial-back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Tutoriales
+            </a>
+
+            <div class="tutorial-header">
+                <div class="tutorial-badge">Tutorial 4</div>
+                <h1>Reportes</h1>
+                <p class="lead">Genera reportes detallados y profesionales para analizar el rendimiento de tu negocio de créditos.</p>
+            </div>
+
+            <div class="tutorial-video-container">
+                <h3 class="mb-4">Video Tutorial</h3>
+                <div class="tutorial-video-wrapper">
+                    <div class="video-placeholder">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Video Tutorial - Reportes</span>
+                    </div>
+                    <!-- Placeholder for actual video -->
+                    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Reportes" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+            <div class="tutorial-steps-container">
+                <div class="tutorial-steps-header">
+                    <h3>Pasos Detallados</h3>
+                    <p>Sigue estos pasos para generar reportes completos y útiles</p>
+                    <div class="mt-2">
+                        <a class="btn btn-outline-primary btn-sm" href="sample-reporte-dashboard.html?print=1" target="_blank">📥 Descargar reporte (Ejemplo PDF)</a>
+                    </div>
+                </div>
+
+                <div class="tutorial-steps-list">
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">1</div>
+                        <div class="tutorial-step-content">
+                            <h4>Ir al Dashboard / Reporte Ejecutivo</h4>
+                            <p>En el menú principal seleccioná <strong>Dashboard</strong> (o <strong>Reporte Ejecutivo</strong>). Si la pantalla está vacía, verificá que haya créditos y cobros cargados y que el rango de fechas no esté vacío.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">2</div>
+                        <div class="tutorial-step-content">
+                            <h4>Filtros del reporte</h4>
+                            <p>Arriba del dashboard tenés los filtros principales:</p>
+                            <ul>
+                                <li><strong>Desde</strong> y <strong>Hasta</strong> (podés poner la misma fecha para ver un solo día).</li>
+                                <li><strong>Aplicar filtros</strong> — recalcula totales y gráficos según el rango seleccionado.</li>
+                            </ul>
+                            <p>Tip: empezá con un rango pequeño (por ejemplo últimos 7 días) para validar resultados rápidamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">3</div>
+                        <div class="tutorial-step-content">
+                            <h4>Gráfico 1 — Dinero Entregado vs Dinero Cobrado</h4>
+                            <p>Qué muestra: dos series por día dentro del rango:</p>
+                            <ul>
+                                <li><strong>Entregado:</strong> total desembolsado por créditos aprobados en esa fecha.</li>
+                                <li><strong>Cobrado:</strong> total de pagos registrados (cuotas pagas) en esa fecha.</li>
+                            </ul>
+                            <p>Para qué sirve: comparar ritmo de colocación vs recaudación. Lectura rápida: si <em>Cobrado &gt; Entregado</em> → caja positiva; si <em>Entregado &gt; Cobrado</em> → expansión de cartera.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">4</div>
+                        <div class="tutorial-step-content">
+                            <h4>Gráfico 2 — Solicitado por cliente (Top)</h4>
+                            <p>Qué muestra: barras por cliente con el monto solicitado en el período (puede incluir solicitudes no aprobadas).</p>
+                            <p>Para qué sirve: identificar quiénes piden más y priorizar seguimiento. Lectura rápida: los primeros de la lista son los mayores demandantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">5</div>
+                        <div class="tutorial-step-content">
+                            <h4>Gráfico 3 — Proyección de Cobros (mensual)</h4>
+                            <p>Qué muestra: total de cuotas pendientes agrupadas por mes de vencimiento (próximos meses).</p>
+                            <p>Para qué sirve: planificar flujo de caja futuro. Lectura rápida: meses con picos altos indican mayor volumen de cobros esperados.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">6</div>
+                        <div class="tutorial-step-content">
+                            <h4>Top 10 Deudores (Cuotas Vencidas)</h4>
+                            <p>Debajo de los gráficos verás el panel <strong>Top 10 Deudores</strong> con columnas:</p>
+                            <ul>
+                                <li>Cliente</li>
+                                <li>Fecha de ingreso a deudores (desde cuándo está en mora)</li>
+                                <li>¿Actualmente en mora? (Sí/No)</li>
+                                <li>Fecha última actualización</li>
+                            </ul>
+                            <p>Comportamiento: el listado se actualiza cuando ejecutás la actualización. Si un cliente regulariza la deuda, quedará en el histórico como OK (no en mora).</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">7</div>
+                        <div class="tutorial-step-content">
+                            <h4>Panel completo de Deudores</h4>
+                            <p>Para ver el listado completo o forzar la actualización: <strong>Créditos &gt; Deudores</strong>. Al actualizar, el sistema agrega clientes con cuotas vencidas y quita a quienes regularizaron — esta actualización impacta el Top 10 del Dashboard.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">8</div>
+                        <div class="tutorial-step-content">
+                            <h4>Significado de las métricas</h4>
+                            <ul>
+                                <li><strong>Entregado:</strong> suma de desembolsos de créditos aprobados en el rango.</li>
+                                <li><strong>Cobrado:</strong> suma de pagos de cuotas registrados en el rango.</li>
+                                <li><strong>Solicitado:</strong> suma de montos solicitados por cliente en el rango (no necesariamente aprobados).</li>
+                                <li><strong>En mora:</strong> cliente con al menos una cuota vencida e impaga a la fecha de cálculo.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">9</div>
+                        <div class="tutorial-step-content">
+                            <h4>Tres chequeos rápidos</h4>
+                            <ol>
+                                <li>¿Seleccionaste el rango correcto y apretaste <strong>Aplicar filtros</strong>?</li>
+                                <li>¿Hubo créditos aprobados y pagos dentro del rango?</li>
+                                <li>¿Corriste la actualización de Deudores si el Top 10 no refleja la realidad?</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">10</div>
+                        <div class="tutorial-step-content">
+                            <h4>Mini recorrido ejemplo (2 minutos)</h4>
+                            <ol>
+                                <li>Filtrá Desde/Hasta = hoy → Aplicar.</li>
+                                <li>Observá si hoy entregaste o cobraste algo.</li>
+                                <li>Cambiá el rango a este mes → Aplicar.</li>
+                                <li>Revisá la tendencia Entregado vs Cobrado y el Top de solicitados.</li>
+                                <li>Andá a <strong>Créditos &gt; Deudores</strong>, ejecutá <strong>Actualizar</strong>, volvé al Dashboard y confirmá que el Top 10 se refrescó.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">11</div>
+                        <div class="tutorial-step-content">
+                            <h4>Proyección de Cobro (botón dedicado)</h4>
+                            <p>En el Dashboard verás un botón llamado <strong>“Proyección de Cobro”</strong>. Al hacer clic se abre una vista enfocada 100% en cuotas pendientes (vencidas y a vencer).</p>
+
+                            <h6>Encabezado</h6>
+                            <p><strong>Proyección de Cobros Futuros</strong><br> Análisis de todas las cuotas pendientes de pago.</p>
+
+                            <h6>KPIs (arriba de la página)</h6>
+                            <p>Muestran totales al momento actual:</p>
+                            <ul>
+                                <li><strong>Total a Cobrar (General):</strong> suma de todas las cuotas pendientes (vencidas + futuras). Ejemplo: $54.722.610,94.</li>
+                                <li><strong>A cobrar en los próximos 30 días:</strong> cuotas con vencimiento entre hoy y hoy + 30 días. Ejemplo: $10.373.275,36.</li>
+                                <li><strong>Total Vencido a la Fecha:</strong> cuotas cuyo vencimiento es anterior a hoy y no están pagas. Ejemplo: $5.314.333,42.</li>
+                            </ul>
+                            <p>Tip: estos KPIs no dependen del rango del dashboard; reflejan el estado real de tu cartera a hoy.</p>
+
+                            <h6>Gráfico: Proyección de Cobros Mensuales (Próximos 12 meses)</h6>
+                            <p>Qué muestra: barras por mes de vencimiento con el total proyectado a cobrar de cuotas pendientes para los próximos 12 meses. Para qué sirve: planificar flujo de caja mensual. Lectura rápida: el mes con barra más alta es el mes con mayor cobro esperado.</p>
+
+                            <h6>Tabla: Detalle de Cuotas Pendientes</h6>
+                            <p>Listado paginado con todas las cuotas pendientes (vencidas y a vencer). Columnas principales:</p>
+                            <ul>
+                                <li>Vencimiento (fecha de la cuota)</li>
+                                <li>Cliente</li>
+                                <li>Crédito N°</li>
+                                <li>Cuota N°</li>
+                                <li>Monto</li>
+                                <li>Estado (Vencida / Pendiente)</li>
+                            </ul>
+                            <p>Controles: paginación, ordenar por columnas (si la configuración permite) y buscar/filtrar por cliente. Operativa típica: abrir la ficha del cliente desde la tabla para ver su estado de cuenta o registrar el cobro.</p>
+
+                            <h6>Relación con Deudores</h6>
+                            <p>El Top 10 Deudores del dashboard se nutre del módulo <strong>Créditos → Deudores</strong>. Al actualizar Deudores, el sistema agrega a quienes entran en mora y quita a quienes regularizaron. La Proyección de Cobro usa directamente las cuotas (no depende del Top 10), pero ambos quedan coherentes si mantenés Deudores actualizado.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-navigation mt-4 text-end">
+                    <a class="btn btn-primary" href="tutorial-usuarios-permisos.html">Siguiente →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

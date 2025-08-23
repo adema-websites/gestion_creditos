@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Alta de Clientes - Gestión de Créditos</title>
+    <meta name="description" content="Aprende a gestionar tu base de clientes de forma eficiente y organizada.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tutorial-page">
+        <div class="container">
+            <a href="index.html#tutoriales" class="tutorial-back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Tutoriales
+            </a>
+
+            <div class="tutorial-header">
+                <div class="tutorial-badge">Tutorial 2</div>
+                <h1>Alta de Clientes</h1>
+                <p class="lead">Gestiona tu base de clientes de forma eficiente y organizada con todas las herramientas necesarias.</p>
+            </div>
+
+            <div class="tutorial-video-container">
+                <h3 class="mb-4">Video Tutorial</h3>
+                <div class="tutorial-video-wrapper">
+                    <div class="video-placeholder">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Video Tutorial - Alta de Clientes</span>
+                    </div>
+                    <!-- Placeholder for actual video -->
+                    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Alta de Clientes" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+            <div class="tutorial-steps-container">
+                <div class="tutorial-steps-header">
+                    <h3>Pasos Detallados</h3>
+                    <p>Sigue estos pasos para agregar y gestionar clientes efectivamente</p>
+                </div>
+
+                <div class="tutorial-steps-list">
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">1</div>
+                        <div class="tutorial-step-content">
+                            <h4>Entrar a Clientes</h4>
+                            <p>En el menú lateral izquierdo haz clic en <strong>Clientes</strong>. En la parte superior de la vista verás un botón <strong>Agregar Cliente</strong> para crear un nuevo registro.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">2</div>
+                        <div class="tutorial-step-content">
+                            <h4>Formulario — Pestaña <em>General</em></h4>
+                            <p>El formulario se abre con la pestaña <strong>General</strong> seleccionada. Aquí debes completar:</p>
+                            <ul>
+                                <li>DNI / Documento</li>
+                                <li>Nombres</li>
+                                <li>Apellidos</li>
+                                <li>Email</li>
+                                <li>Fecha de nacimiento</li>
+                                <li>Dirección</li>
+                                <li>Localidad</li>
+                                <li>Provincia</li>
+                                <li>Teléfonos</li>
+                                <li>Comentario</li>
+                            </ul>
+                            <p>Al final del formulario encontrarás un <strong>check</strong> (habilitado / deshabilitado). Si está en <em>Verdadero</em> el cliente podrá ser autorizado para solicitar créditos; si está en <em>Falso</em>, el sistema no permitirá autorizar créditos para ese cliente.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">3</div>
+                        <div class="tutorial-step-content">
+                            <h4>Pestaña <em>Cuentas</em></h4>
+                            <p>La segunda pestaña <strong>Cuentas</strong> se carga automáticamente. Allí verás un resumen de los créditos del cliente: créditos activos, cuotas próximas, saldo total, y vencimientos. Esta pestaña es de solo lectura y muestra el historial y el estado actual de deudas.</p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">4</div>
+                        <div class="tutorial-step-content">
+                            <h4>Guardar y volver a la lista</h4>
+                            <p>Al crear el cliente y pulsar <strong>Guardar</strong>, la aplicación vuelve a la vista de lista de clientes con estas columnas visibles:</p>
+                            <ul>
+                                <li>Documento</li>
+                                <li>Nombre</li>
+                                <li>Teléfono</li>
+                                <li>Créditos activos</li>
+                                <li>Saldo pendiente sin vencer</li>
+                                <li>Saldo pendiente vencido</li>
+                                <li>Informe (última columna)</li>
+                            </ul>
+                            <p>En la columna <strong>Informe</strong> hay un botón que permite descargar un <strong>informe en PDF</strong> con el estado de crédito del cliente. En este tutorial añadimos un ejemplo funcional para que pruebes:</p>
+                            <p>
+                                <a class="btn btn-outline-secondary" href="sample-informe-cliente.html?print=1" target="_blank">Descargar informe de ejemplo (imprimir/guardar como PDF)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-step-number">5</div>
+                        <div class="tutorial-step-content">
+                            <h4>Filtrado y exportación</h4>
+                            <p>En la parte superior de la tabla de clientes encontrarás controles para:</p>
+                            <ul>
+                                <li>Filtrar por estado: <em>Habilitado</em> / <em>No habilitado</em>.</li>
+                                <li>Buscar por nombre o documento.</li>
+                                <li>Exportar los resultados en Excel (botón <strong>Exportar</strong>).</li>
+                            </ul>
+                            <p>Usa filtros para acotar la lista y luego exporta solo los resultados filtrados si necesitas realizar un análisis fuera del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-navigation mt-4 text-end">
+                    <a class="btn btn-primary" href="tutorial-creditos-aprobaciones.html">Siguiente →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -45,8 +45,7 @@ La landing page incluye las siguientes secciones:
 
 ## Oferta Destacada
 
-- Precio regular: 30 USD
-- Precio de oferta (junio 2025): 15 USD (50% de descuento)
+- Precio: 50 USD
 - Método de contacto para compra: WhatsApp
 
 ## Contacto y Soporte
