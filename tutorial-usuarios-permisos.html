@@ -37,57 +37,111 @@
                         <span>Video Tutorial - Usuarios y Permisos</span>
                     </div>
                     <!-- Placeholder for actual video -->
-                    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Alta de Usuarios y Permisos" allowfullscreen></iframe> -->
+                    <iframe src="https://www.youtube.com/embed/obARtwTJIH4" title="Alta de Usuarios y Permisos" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="tutorial-steps-container">
-                <div class="tutorial-steps-header">
-                    <h3>Pasos Detallados</h3>
-                    <p>Sigue estos pasos para gestionar usuarios y permisos de manera segura</p>
+            <div class="tutorial-steps-header">
+                <h3>Pasos Detallados</h3>
+                <p>Configura usuarios, grupos y permisos con control fino de accesos.</p>
+            </div>
+
+            <div class="tutorial-steps-list">
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">1</div>
+                <div class="tutorial-step-content">
+                    <h4>Ingresar a Usuarios y Grupos</h4>
+                    <p>Como <strong>superadministrador</strong>, accedé a los menús <strong>Usuarios</strong> y <strong>Grupos</strong> para gestionar cuentas y permisos.</p>
+                </div>
                 </div>
 
-                <div class="tutorial-steps-list">
-                    <div class="tutorial-step">
-                        <div class="tutorial-step-number">1</div>
-                        <div class="tutorial-step-content">
-                            <h4>Crear Nuevo Usuario</h4>
-                            <p>Accede a la sección de administración de usuarios y crea un nuevo usuario ingresando nombre de usuario, contraseña y datos básicos del empleado.</p>
-                            <div class="tutorial-step-tips">
-                                <h6><i class="bi bi-shield-lock"></i> Seguridad:</h6>
-                                <p>Utiliza contraseñas seguras y únicas para cada usuario. El sistema te guiará sobre los requisitos mínimos de seguridad.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">2</div>
+                <div class="tutorial-step-content">
+                    <h4>Revisar grupos por defecto</h4>
+                    <p>Encontrarás grupos predefinidos como <strong>Autorizador</strong> y <strong>Representante</strong>. Estos concentran permisos típicos para agilizar la configuración.</p>
+                </div>
+                </div>
 
-                    <div class="tutorial-step">
-                        <div class="tutorial-step-number">2</div>
-                        <div class="tutorial-step-content">
-                            <h4>Asignar Permisos y Roles</h4>
-                            <p>Define qué secciones del sistema puede acceder cada usuario. Puedes crear roles personalizados o usar los predefinidos: Administrador, Operador, Solo Lectura.</p>
-                            <div class="tutorial-step-tips">
-                                <h6><i class="bi bi-person-gear"></i> Roles disponibles:</h6>
-                                <p>Administrador (acceso total), Operador (gestión de clientes y créditos), Solo Lectura (consulta de información).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tutorial-step">
-                        <div class="tutorial-step-number">3</div>
-                        <div class="tutorial-step-content">
-                            <h4>Probar y Validar Accesos</h4>
-                            <p>Una vez configurado el usuario, realiza pruebas de acceso para verificar que los permisos funcionen correctamente y el usuario pueda trabajar sin inconvenientes.</p>
-                            <div class="tutorial-step-tips">
-                                <h6><i class="bi bi-check-circle"></i> Verificación:</h6>
-                                <p>Prueba el acceso con las credenciales del nuevo usuario para confirmar que solo puede acceder a las secciones autorizadas.</p>
-                            </div>
-                        </div>
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">3</div>
+                <div class="tutorial-step-content">
+                    <h4>Configurar permisos del grupo</h4>
+                    <p>Editá cada grupo y ajustá permisos (por ejemplo: <em>ver</em>, <em>agregar</em>, <em>cambiar</em>, <em>eliminar</em> solicitudes de crédito). Guardá los cambios.</p>
+                    <div class="tutorial-step-tips">
+                    <h6><i class="bi bi-shield-check"></i> Buenas prácticas</h6>
+                    <p>Aplicá <strong>mínimo privilegio</strong>: otorgá solo lo necesario según la función.</p>
                     </div>
                 </div>
-                <div class="tutorial-navigation mt-4 text-end">
-                    <a class="btn btn-primary" href="index.html#tutoriales">Finalizar y Volver a Tutoriales</a>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">4</div>
+                <div class="tutorial-step-content">
+                    <h4>Crear un nuevo usuario</h4>
+                    <p>En <strong>Usuarios &gt; Agregar</strong>, completá <strong>nombre de usuario</strong>, <strong>contraseña segura</strong> y datos básicos.</p>
+                    <ul>
+                    <li>Marcá <strong>Staff</strong> para permitir acceso al panel de administración.</li>
+                    <li>Solo si corresponde, marcá <strong>Superusuario</strong> (acceso y eliminación total).</li>
+                    </ul>
+                    <div class="tutorial-step-tips">
+                    <h6><i class="bi bi-lock"></i> Seguridad</h6>
+                    <p>Usá contraseñas únicas y exigí cambios periódicos.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">5</div>
+                <div class="tutorial-step-content">
+                    <h4>Asignar roles y grupos</h4>
+                    <p>En la ficha del usuario, agregalo a uno o más <strong>grupos</strong> (p. ej., <em>Representante</em> o <em>Autorizador</em>) o sumá <strong>permisos individuales</strong> si necesitás un ajuste fino.</p>
+                </div>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">6</div>
+                <div class="tutorial-step-content">
+                    <h4>Rol Representante (alcance)</h4>
+                    <p>Puede <strong>crear solicitudes de crédito</strong>, pero <strong>no autorizarlas</strong>. Suele tener acceso limitado y <strong>no</strong> ve los menús de <em>Usuarios</em> y <em>Grupos</em>.</p>
+                </div>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">7</div>
+                <div class="tutorial-step-content">
+                    <h4>Rol Autorizador (alcance)</h4>
+                    <p>Puede <strong>aprobar solicitudes</strong> creadas por otros y acceder a <strong>Usuarios</strong> y <strong>Grupos</strong> según configuración. Es clave para la <strong>aprobación final</strong> de créditos.</p>
+                </div>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">8</div>
+                <div class="tutorial-step-content">
+                    <h4>Validar accesos</h4>
+                    <p>Iniciá sesión con el usuario nuevo y verificá que solo vea y ejecute lo que su rol permite. Ajustá permisos si es necesario.</p>
+                    <div class="tutorial-step-tips">
+                    <h6><i class="bi bi-check2-circle"></i> Checklist rápido</h6>
+                    <p>¿Está marcado <strong>Staff</strong>? ¿Pertenece al <strong>grupo correcto</strong>? ¿Funciona el flujo de trabajo esperado?</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="tutorial-step">
+                <div class="tutorial-step-number">9</div>
+                <div class="tutorial-step-content">
+                    <h4>Cambiar contraseña del usuario</h4>
+                    <p>Desde su perfil, el usuario puede <strong>modificar su contraseña</strong> en forma segura cuando lo necesite.</p>
+                </div>
                 </div>
             </div>
+
+            <div class="tutorial-navigation mt-4 text-end">
+                <a class="btn btn-primary" href="index.html#tutoriales">Finalizar y Volver a Tutoriales</a>
+            </div>
+            </div>
+
         </div>
     </div>
 
