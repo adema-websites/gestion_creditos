@@ -45,7 +45,7 @@ La landing page incluye las siguientes secciones:
 
 ## Oferta Destacada
 
-- Precio: 50 USD
+- Precio: 100 USD (50% descuento en noviembre = 50 USD)
 - Método de contacto para compra: WhatsApp
 
 ## Contacto y Soporte

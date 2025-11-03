@@ -1,0 +1,65 @@
+[
+  {
+    "model": "creditos.cuota",
+    "pk": 1,
+    "fields": {
+      "credito": 1,
+      "numero_cuota": 1,
+      "monto_cuota": 1000.00,
+      "fecha_vencimiento": "2025-11-15",
+      "pagada": false,
+      "fecha_pago": null,
+      "monto_pagado": null,
+      "medio_pago": null,
+      "interes_mora_cobrado": 0.00,
+      "dias_mora_al_pago": 0,
+      "cobrada_con_interes": false,
+      "monto_adelanto": 500.00,
+      "adelanto_confirmado": true,
+      "fecha_adelanto": "2025-11-10",
+      "medio_pago_adelanto": "Efectivo"
+    }
+  },
+  {
+    "model": "creditos.cuota",
+    "pk": 2,
+    "fields": {
+      "credito": 1,
+      "numero_cuota": 2,
+      "monto_cuota": 1000.00,
+      "fecha_vencimiento": "2025-11-22",
+      "pagada": false,
+      "fecha_pago": null,
+      "monto_pagado": null,
+      "medio_pago": null,
+      "interes_mora_cobrado": 0.00,
+      "dias_mora_al_pago": 0,
+      "cobrada_con_interes": false,
+      "monto_adelanto": 300.00,
+      "adelanto_confirmado": true,
+      "fecha_adelanto": "2025-11-18",
+      "medio_pago_adelanto": "Transferencia"
+    }
+  },
+  {
+    "model": "creditos.cuota",
+    "pk": 3,
+    "fields": {
+      "credito": 2,
+      "numero_cuota": 1,
+      "monto_cuota": 1500.00,
+      "fecha_vencimiento": "2025-11-20",
+      "pagada": false,
+      "fecha_pago": null,
+      "monto_pagado": null,
+      "medio_pago": null,
+      "interes_mora_cobrado": 0.00,
+      "dias_mora_al_pago": 0,
+      "cobrada_con_interes": false,
+      "monto_adelanto": 750.00,
+      "adelanto_confirmado": true,
+      "fecha_adelanto": "2025-11-15",
+      "medio_pago_adelanto": "Tarjeta"
+    }
+  }
+]

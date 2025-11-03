@@ -1,0 +1,81 @@
+[
+  {
+    "model": "panel_control.datosempresa",
+    "pk": 1,
+    "fields": {
+      "nombre_empresa": "Empresa Demo",
+      "direccion": "Calle Principal 123",
+      "telefono": "123456789",
+      "email": "info@empresa.com",
+      "cuit": "12345678901",
+      "porcentaje_interes_mora": 0.50,
+      "mostrar_boton_cobrar_con_interes": true,
+      "mostrar_boton_cobrar_sin_interes": true,
+      "mostrar_texto_interes_adelanto": true,
+      "orientacion_pdf": "horizontal"
+    }
+  },
+  {
+    "model": "creditos.cuota",
+    "pk": 4,
+    "fields": {
+      "credito": 1,
+      "numero_cuota": 3,
+      "monto_cuota": 1000.00,
+      "fecha_vencimiento": "2025-10-15",
+      "pagada": true,
+      "fecha_pago": "2025-10-25",
+      "monto_pagado": 1050.00,
+      "medio_pago": "Efectivo",
+      "interes_mora_cobrado": 50.00,
+      "dias_mora_al_pago": 10,
+      "cobrada_con_interes": true,
+      "monto_adelanto": null,
+      "adelanto_confirmado": false,
+      "fecha_adelanto": null,
+      "medio_pago_adelanto": null
+    }
+  },
+  {
+    "model": "creditos.cuota",
+    "pk": 5,
+    "fields": {
+      "credito": 1,
+      "numero_cuota": 4,
+      "monto_cuota": 1000.00,
+      "fecha_vencimiento": "2025-10-22",
+      "pagada": true,
+      "fecha_pago": "2025-10-30",
+      "monto_pagado": 1000.00,
+      "medio_pago": "Transferencia",
+      "interes_mora_cobrado": 0.00,
+      "dias_mora_al_pago": 8,
+      "cobrada_con_interes": false,
+      "monto_adelanto": null,
+      "adelanto_confirmado": false,
+      "fecha_adelanto": null,
+      "medio_pago_adelanto": null
+    }
+  },
+  {
+    "model": "creditos.cuota",
+    "pk": 6,
+    "fields": {
+      "credito": 2,
+      "numero_cuota": 2,
+      "monto_cuota": 1500.00,
+      "fecha_vencimiento": "2025-10-20",
+      "pagada": true,
+      "fecha_pago": "2025-11-01",
+      "monto_pagado": 1575.00,
+      "medio_pago": "Tarjeta",
+      "interes_mora_cobrado": 75.00,
+      "dias_mora_al_pago": 12,
+      "cobrada_con_interes": true,
+      "monto_adelanto": null,
+      "adelanto_confirmado": false,
+      "fecha_adelanto": null,
+      "medio_pago_adelanto": null
+    }
+  }
+]
