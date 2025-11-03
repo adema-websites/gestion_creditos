@@ -891,6 +891,53 @@ section {
   font-size: 0.875rem;
 }
 
+/* Tutorial section cards */
+.tutorial-section-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.tutorial-section-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.section-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.section-title h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.section-title p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 /* Tutorial responsive adjustments */
 @media (max-width: 992px) {
   .tutorial-video {
@@ -918,6 +965,25 @@ section {
 
   .tutorial-step-number {
     margin: 0 auto;
+  }
+
+  .tutorial-section-card {
+    padding: 2rem;
+  }
+
+  .tutorial-section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .section-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section-icon i {
+    font-size: 1.5rem;
   }
 }
 
